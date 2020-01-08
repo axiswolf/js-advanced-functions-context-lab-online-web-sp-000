@@ -69,8 +69,8 @@ function wagesEarnedOnDate(data_s) {
   return hoursWorkedOnDate.call(this, data_s) * this.payPerHour;
 }
 
-function calculatePayroll() {
-
+function calculatePayroll(employeeData) {
+    return employeeData.map(employeeRecord => employeeRecord.timeInEvents.map(record => wagesEarnedOnDate.call(employeeRecord, record.date)).reduce((a, b) => a + b)).reduce((a, b) => a + b);
 }
 
 function findEmployeeByFirstName() {
