@@ -36,10 +36,22 @@ function createEmployeeRecords(employeeData) {
   return employeeData.map(createEmployeeRecord);
 }
 
-function createTimeInEvent() {
-
+function createTimeInEvent(record, date) {
+  let timeInEvent = {
+      type: "TimeIn",
+      hour: parseInt(date.split(" ")[1]),
+      date: date.split(" ")[0]
+  }
+  record.timeInEvents.push(timeInEvent)
+  return record;
 }
 
-function createTimeOutEvent() {
-
+function createTimeOutEvent(record, date) {
+  let timeInEvent = {
+      type: "TimeOut",
+      hour: parseInt(date.split(" ")[1]),
+      date: date.split(" ")[0]
+  }
+  record.timeOutEvents.push(timeOutEvent)
+  return record;
 }
