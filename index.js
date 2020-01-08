@@ -50,8 +50,8 @@ function createTimeInEvent(date_s) {
 function createTimeOutEvent(date_s) {
   let timeInEvent = {
       type: "TimeOut",
-      hour: parseInt(date.split(" ")[1]),
-      date: date.split(" ")[0]
+      hour: Number(hour),
+      date: date
   }
   this.timeOutEvents.push(timeOutEvent)
   return this;
