@@ -64,7 +64,7 @@ function hoursWorkedOnDate(date_s) {
   return (timeOutHr - timeInHr)/100;
 }
 
-function wagesEarnedOnDate() {
+function wagesEarnedOnDate(data_s) {
   // multiplies the hours worked by the employee's rate per hour
   return hoursWorkedOnDate.call(this, data_s) * this.payPerHour;
 }
