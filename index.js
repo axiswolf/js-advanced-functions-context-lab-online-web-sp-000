@@ -68,3 +68,15 @@ function wagesEarnedOnDate(data_s) {
   // multiplies the hours worked by the employee's rate per hour
   return hoursWorkedOnDate.call(this, data_s) * this.payPerHour;
 }
+
+function calculatePayroll() {
+  
+}
+
+function findEmployeeByFirstName() {
+  
+}
+
+function calculatePayroll() {
+  
+}
