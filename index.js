@@ -70,13 +70,13 @@ function wagesEarnedOnDate(data_s) {
 }
 
 function calculatePayroll() {
-  
+
 }
 
 function findEmployeeByFirstName() {
-  
+
 }
 
 function calculatePayroll() {
-  
+
 }
