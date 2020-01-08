@@ -57,3 +57,9 @@ function createTimeOutEvent(date_s) {
   this.timeOutEvents.push(timeOutEvent)
   return this;
 }
+
+function hoursWorkedOnDate(date_s) {
+  const timeInHr = this.timeInEvents.find(timeIn => timeIn.date == date_s).hour;
+  const timeOutHr = this.timeOutEvents.find(timeOut => timeOut.date == date_s).hour;
+  return (timeOutHr - timeInHr)/100;
+}
