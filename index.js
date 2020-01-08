@@ -35,3 +35,11 @@ function createEmployeeRecord([firstName, familyName, title, payPerHour]) {
 function createEmployeeRecords(employeeData) {
   return employeeData.map(createEmployeeRecord);
 }
+
+function createTimeInEvent() {
+  
+}
+
+function createTimeOutEvent() {
+  
+}
