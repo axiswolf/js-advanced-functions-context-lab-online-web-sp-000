@@ -31,3 +31,7 @@ function createEmployeeRecord([firstName, familyName, title, payPerHour]) {
     "timeOutEvents": []
   }
 }
+
+function createEmployeeRecords() {
+  
+}
