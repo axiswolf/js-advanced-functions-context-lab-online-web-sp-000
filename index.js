@@ -73,7 +73,7 @@ function calculatePayroll(employeeData) {
     return employeeData.map(employeeRecord => employeeRecord.timeInEvents.map(record => wagesEarnedOnDate.call(employeeRecord, record.date)).reduce((a, b) => a + b)).reduce((a, b) => a + b);
 }
 
-function findEmployeeByFirstName() {
+function findEmployeeByFirstName(collection, firstNameString) {
 
 }
 
