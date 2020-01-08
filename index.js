@@ -63,3 +63,8 @@ function hoursWorkedOnDate(date_s) {
   const timeOutHr = this.timeOutEvents.find(timeOut => timeOut.date == date_s).hour;
   return (timeOutHr - timeInHr)/100;
 }
+
+function wagesEarnedOnDate() {
+  // multiplies the hours worked by the employee's rate per hour
+  return hoursWorkedOnDate.call(this, data_s) * this.payPerHour;
+}
