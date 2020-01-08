@@ -37,7 +37,7 @@ function createEmployeeRecords(employeeData) {
 }
 
 function createTimeInEvent(date_s) {
-  let [date, hour] = date_s.split(' ')
+  let [date, hour] = date_s.split(' ');
   let timeInEvent = {
       type: "TimeIn",
       hour: Number(hour),
@@ -48,7 +48,7 @@ function createTimeInEvent(date_s) {
 }
 
 function createTimeOutEvent(date_s) {
-  let [date, hour] = date_s.split(' ')
+  let [date, hour] = date_s.split(' ');
   let timeInEvent = {
       type: "TimeOut",
       hour: Number(hour),
